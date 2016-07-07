@@ -1,0 +1,22 @@
+{
+  "name": "star-wars-app",
+  "version": "1.0.0",
+  "description": "A basic star was app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidthegreat/star-wars-app.git"
+  },
+  "author": "David Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidthegreat/star-wars-app/issues"
+  },
+  "homepage": "https://github.com/davidthegreat/star-wars-app",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
