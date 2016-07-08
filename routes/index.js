@@ -43,5 +43,10 @@ exports.movie_single = function(req, res){
 
 //notFound
 exports.notFound = function(req, res){
-  res.send("this is not the pafe that you are looking for")
+    var movies = moviesJSON.movies;
+    res.render ('notFound', {
+      movies : movies,
+      title : "An error occurred during validation "
+
+    })
 };
