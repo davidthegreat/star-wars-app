@@ -34,7 +34,10 @@ exports.movie_single = function(req, res){
       main_characters : main_characters
     });
   }else{
-    res.send("not the page");
+    res.render('notFound',{
+      movies : movies,
+      title : "This episode doesn't exits yet"
+    });
   }
 };
 
