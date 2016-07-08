@@ -14,8 +14,25 @@ exports.home = function(req, res){
 
 //movie single
 exports.movie_single = function(req, res){
+
   var episode_number = req.params.episode_number;
-  res.send("This is the page for episode " + episode_number);
+
+  var movies = moviesJSON.movies;
+
+  if (episode_number >=1 && episode_number <= 6) {
+
+    var movie = movies[episode_number-1];
+
+    var title = movie.title;
+
+    res.render('movie_single', {
+      movies : movies,
+      title : title,
+      movie :movie
+    });
+  }else{
+    res.send("not the page");
+  }
 };
 
 //notFound
