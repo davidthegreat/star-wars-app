@@ -25,10 +25,13 @@ exports.movie_single = function(req, res){
 
     var title = movie.title;
 
+    var main_characters = movie.main_characters
+
     res.render('movie_single', {
       movies : movies,
       title : title,
-      movie :movie
+      movie :movie,
+      main_characters : main_characters
     });
   }else{
     res.send("not the page");
