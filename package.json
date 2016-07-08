@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/davidthegreat/star-wars-app",
   "dependencies": {
+    "ejs": "^2.4.2",
     "express": "^4.14.0"
   }
 }
